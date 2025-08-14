@@ -1,9 +1,9 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "YOUR_GEMINI_API_KEY";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "your_new_gemini_api_key_here";
 
 // Validate API key
-if (!GEMINI_API_KEY || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY" || GEMINI_API_KEY === "your_actual_gemini_api_key_here") {
+if (!GEMINI_API_KEY || GEMINI_API_KEY === "your_new_gemini_api_key_here" || GEMINI_API_KEY === "your_actual_gemini_api_key_here") {
   console.error('⚠️ Gemini API key is not configured properly. Please set VITE_GEMINI_API_KEY in your .env.local file.');
 }
 
@@ -22,7 +22,7 @@ interface AnalyzeBody {
 
 export async function callGeminiAI(body: AnalyzeBody): Promise<{ data?: { text: string }; error?: { message: string } }> {
   // Check if API key is properly configured
-  if (!GEMINI_API_KEY || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY" || GEMINI_API_KEY === "your_actual_gemini_api_key_here") {
+  if (!GEMINI_API_KEY || GEMINI_API_KEY === "your_new_gemini_api_key_here" || GEMINI_API_KEY === "your_actual_gemini_api_key_here") {
     return {
       error: {
         message: "🔑 API key not configured. Please add your Gemini API key to the .env.local file. Get your API key from: https://aistudio.google.com/app/apikey"
