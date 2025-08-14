@@ -16,7 +16,7 @@
 3. Replace `your_actual_gemini_api_key_here` with your real API key:
 
 ```bash
-VITE_GEMINI_API_KEY=AIzaSyC1234567890abcdef1234567890abcdef
+VITE_GEMINI_API_KEY=your_actual_gemini_api_key_here
 ```
 
 ⚠️ **Important**: Make sure there are no spaces around the `=` sign and no quotes around the key.
@@ -47,16 +47,16 @@ If you're getting an API key error, check:
 
 ### Example of correct `.env.local` format:
 ```bash
-VITE_GEMINI_API_KEY=AIzaSyC1234567890abcdef1234567890abcdef
+VITE_GEMINI_API_KEY=your_actual_gemini_api_key_here
 ```
 
 ### Example of incorrect formats:
 ```bash
 # ❌ Wrong - has quotes
-VITE_GEMINI_API_KEY="AIzaSyC1234567890abcdef1234567890abcdef"
+VITE_GEMINI_API_KEY="your_actual_gemini_api_key_here"
 
 # ❌ Wrong - has spaces
-VITE_GEMINI_API_KEY = AIzaSyC1234567890abcdef1234567890abcdef
+VITE_GEMINI_API_KEY = your_actual_gemini_api_key_here
 
 # ❌ Wrong - placeholder not replaced
 VITE_GEMINI_API_KEY=your_actual_gemini_api_key_here
